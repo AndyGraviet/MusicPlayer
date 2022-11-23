@@ -1,6 +1,8 @@
-from .views import listen
+from .views  import listenPageView
 from django.urls import path
 
+app_name = 'listen'
+
 urlpatterns = [
-    path("", listen)
+    path("", listenPageView, name='base')
 ]
